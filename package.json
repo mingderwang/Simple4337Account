@@ -1,11 +1,12 @@
 {
   "name": "viem-hardhat",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "license": "MIT",
   "scripts": {
     "client": "npx hardhat run scripts/clients.ts",
     "contracts": "npx hardhat run scripts/contracts.ts",
-    "deploy:lock": "npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost"
+    "deploy:lock": "npx hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost",
+    "dev": "bun run --watch index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
